@@ -35,9 +35,11 @@ body{
     background-color: #FFC0D9;
 }
 .resume-container{
+    
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 5px;
+    
 }
 .resume-heading{
     margin-bottom: 0px;
@@ -52,6 +54,8 @@ body{
     gap: 2rem;
     padding: 2rem;
     flex-wrap: wrap;
+    padding-bottom: 0px;
+    min-width: 300px;
 }
 
 .job-title{
@@ -60,6 +64,48 @@ body{
 }
 .job-description{
     margin-top: 0;
+}
+.about-me{
+    background-color: #F9F9E0;
+}
+.about-me-heading{
+    font-size: 1.5rem;
+    font-weight: 500
+}
+.about-me-container{
+    padding: 5px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    
+}
+.contact-me{
+    background-color: #8ACDD7
+}
+.contact-me-heading{
+    font-size: 1.5rem;
+    font-weight: 500
+}
+.contact-me-container{
+    padding: 5px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    
+}
+.footer{
+    background-color: #FF90BC
+}
+.footer-container{
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    justify-content: space-between;
+    
+}
+.social-media{
+    float: right;
+    list-style: none;
+    padding-left: 1em;
+   
 }
 @media(min-width: 992px) {
     .hero-text-div{
@@ -71,11 +117,35 @@ body{
     
 }
 @media(min-width:768px) and (max-width: 991px) {
+    .hero-container{
+        flex-direction: column;
+       
+        padding-bottom: 0;
+    }
+    .hero-text-div{
+        width: 100%;
+        padding: 0;
+    }
+    .hero-image{
+        width: 400px;
+    }
     .job{
         flex: 25%;
     }
 }
 @media(min-width:561px) and (max-width: 767px) {
+    .hero-container{
+        flex-direction: column;
+       
+        padding-bottom: 0;
+    }
+    .hero-text-div{
+        width: 100%;
+        padding: 0;
+    }
+    .hero-image{
+        width: 400px;
+    }
     .job{
         flex: 33%;
     }
@@ -83,7 +153,6 @@ body{
 @media (max-width: 560px){
     .hero-container{
         flex-direction: column;
-        padding: 3rem;
         padding-bottom: 0;
     }
     .hero-text-div{
@@ -98,6 +167,16 @@ body{
     }
     .resume-content{
         display: block;
+    }
+    .about-me-container{
+        padding: 1.5rem;
+    }
+    .contact-me-container{
+        padding: 1.5rem;
+    }
+    .footer-container{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
     
 }
